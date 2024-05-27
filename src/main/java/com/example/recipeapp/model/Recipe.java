@@ -1,15 +1,12 @@
-package com.example.recipeapp.Models;
+package com.example.recipeapp.model;
 
 import ch.qos.logback.core.joran.sanity.Pair;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
 public class Recipe {
-    private Long id;
+    private Integer id;
     private LinkedList<Pair<Ingredient,Integer>> ingredients;
     private String name;
     private Difficulty difficulty;
@@ -30,7 +27,7 @@ public class Recipe {
         if(!ingredients.isEmpty()) calculatePrice();
     }
     
-    public Recipe(Long id, LinkedList<Pair<Ingredient,Integer>> ingredients, String name, Difficulty difficulty, BigDecimal price, Integer rating) {
+    public Recipe(Integer id, LinkedList<Pair<Ingredient,Integer>> ingredients, String name, Difficulty difficulty, BigDecimal price, Integer rating) {
         this.id = id;
         this.ingredients = ingredients;
         this.name = name;
