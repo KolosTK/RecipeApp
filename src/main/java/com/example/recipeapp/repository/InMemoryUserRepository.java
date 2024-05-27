@@ -11,9 +11,9 @@ public class InMemoryUserRepository {
     private static final List<User> DATABASE = new ArrayList<>();
     
     static{
-        DATABASE.add(new User(1,"Errrrrm","Nikola","Shwitse"));
-        DATABASE.add(new User(2,"Serogua","Sergey","Minotrovich"));
-        DATABASE.add(new User(3,"Eleonora","Nina","Ubdulahmatze"));
+        DATABASE.add(new User(1,"Errrrrm","Nikola","Shwitse","errm@gmail.com"));
+        DATABASE.add(new User(2,"Serogua","Sergey","Minotrovich","serga@gmail.com"));
+        DATABASE.add(new User(3,"Eleonora","Nina","Ubdulahmatze","minovazai@gmail.com"));
     }
     public User addUser(User user){
         DATABASE.add(user);
