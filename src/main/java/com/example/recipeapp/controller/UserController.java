@@ -1,7 +1,7 @@
 package com.example.recipeapp.controller;
 
 import com.example.recipeapp.model.User;
-import com.example.recipeapp.service.UserService;
+import com.example.recipeapp.service.IUserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping(path = "/api/users")
 public class UserController {
-    private final UserService userService;
+    private final IUserService userService;
     
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {

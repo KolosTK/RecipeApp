@@ -4,7 +4,7 @@ import com.example.recipeapp.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface IUserService {
     User addUser(User user);
     List<User> getAllUsers();
     User findById(Integer id);

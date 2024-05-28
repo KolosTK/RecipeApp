@@ -1,15 +1,15 @@
 package com.example.recipeapp.service;
 
 import com.example.recipeapp.model.User;
-import com.example.recipeapp.repository.InMemoryUserRepository;
+import com.example.recipeapp.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @RequiredArgsConstructor
 @Service
-public class InMemoryUserService implements UserService{
-    private final InMemoryUserRepository inMemoryUserRepository;
+public class InMemoryUserService implements IUserService {
+    private final UserRepository inMemoryUserRepository;
 
 
     @Override
